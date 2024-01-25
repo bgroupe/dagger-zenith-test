@@ -18,7 +18,6 @@ async function testIt(client: Client) {
         .container()
         .from("alpine")
         .withEnvVariable("CACHEBUSTER", Date.now().toString())
-        // .withNewFile("doTest", { contents: SCRIPT, permissions: 0o750 })
         .withExec(["sh", "-c", "exit 1"])
         .sync();
 }
