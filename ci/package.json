@@ -1,0 +1,14 @@
+{
+  "name": "ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "dagger run node --loader ts-node/esm ./tradTest.mts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dagger.io/dagger": "^0.9.7"
+  }
+}
